@@ -2,7 +2,7 @@
 
 clone the repository and run  `npm install` in order to install dependencies.
 
-Has a bunch of robofriends in the robot.js file in src folder
+Fetches the users from [JasonPlaceHolder](https://jsonplaceholder.typicode.com/) API and displays card components from card.js List is generated in CardList.js file searchbar is dynamic. 
 
 Images of robots are taken from [here](https://robohash.org/)
 
