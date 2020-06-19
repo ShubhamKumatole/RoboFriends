@@ -2,7 +2,9 @@
 
 clone the repository and run  `npm install` in order to install dependencies.
 
-Fetches the users from [JasonPlaceHolder](https://jsonplaceholder.typicode.com/) API and displays card components from card.js List is generated in CardList.js file searchbar is dynamic. 
+Fetches the users from [JasonPlaceHolder](https://jsonplaceholder.typicode.com/) API and displays card components from card.js 
+List is generated in CardList.js file.
+Searchbar is dynamic. 
 
 Images of robots are taken from [here](https://robohash.org/)
 
