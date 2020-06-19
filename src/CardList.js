@@ -1,6 +1,8 @@
 import Card from './Card';
 import React from 'react';
-let CardList = ({robots})=>{
+
+
+const CardList = ({robots})=>{
 	return (
 		robots.map((user,i)=>(<Card 
 				key={i} 
