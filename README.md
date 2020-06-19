@@ -1,3 +1,13 @@
+### RoboFriends app using React.js 
+
+clone the repository and run  `npm install` in order to install dependencies.
+
+Has a bunch of robofriends in the robot.js file in src folder
+
+Images of robots are taken from [here](https://robohash.org/)
+
+This project is a part of the course [The Complete Web Developer in 2020: Zero to Mastery](https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/) 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
