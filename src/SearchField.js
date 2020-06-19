@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const SearchField = ({SearchField,searchChg}) =>{
 	return (
 		<div>
