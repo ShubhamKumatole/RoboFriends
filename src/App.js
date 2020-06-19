@@ -9,9 +9,14 @@ class App extends React.Component {
 	constructor(){
 		super();
 		this.state ={
-			robots: robots,
+			robots: [],
 			searchField: '',
 		}
+	}
+	componentDidMount(){
+		fetch("https://jsonplaceholder.typicode.com/users")
+			.then(response => response.json())
+  			.then(robot => this.setState({robots:robot}))
 	}
 	searchChange = (event)=>{
 		this.setState({searchField:event.target.value});
@@ -20,13 +25,18 @@ class App extends React.Component {
 		const filterRobots = this.state.robots.filter((robot)=>{
 			return robot.name.toLowerCase().includes(this.state.searchField.toLowerCase())
 		});
-		return (
-			<div className="tc">
-				<h1 className="f1">RoboFriends</h1>
-				<SearchField searchChg={this.searchChange}/>
-				<CardList robots={filterRobots} />
-			</div>
-			);
+		if(this.state.robots.length===0){
+			return <h1>Loading...</h1>
+		}
+		else{
+			return (
+				<div className="tc">
+					<h1 className="f1">RoboFriends</h1>
+					<SearchField searchChg={this.searchChange}/>
+					<CardList robots={filterRobots} />
+				</div>
+				);
+		}
 	}
 }
 
